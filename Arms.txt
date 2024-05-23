@@ -1,0 +1,28 @@
+package com.basicprogram.loops;
+import java.util.Scanner;
+public class MyClass {
+	public static void main(String args[]) {
+		for(int start=1;start<=1000;start++) 
+		{
+			int temp=start;
+			int sum=0;
+			int count=0;
+			while(temp>0) 
+			{
+				temp/=10;
+				count++;
+			}
+			temp=start;
+			while(temp!=0) {
+				int rem=temp%10;
+				sum=sum+(int)Math.pow(rem, count);
+				temp/=10;
+			}
+			if(start==sum) 
+			{
+				System.out.println("ArmStrong Number"+sum);
+			}
+			
+		}
+	}
+}
