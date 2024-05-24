@@ -20,7 +20,7 @@ public class MyClass {
 			}
 			if(start==sum) 
 			{
-				System.out.println("ArmStrong Number"+sum);
+				System.out.println("armstrong Number"+sum);
 			}
 			
 		}
